@@ -8,7 +8,7 @@ while True:
         with open('todofiles/todos.txt','r') as file:
             todos = file.readlines()
 
-        todos.append(todo)
+        todos.append(todo + "\n")
 
         with open('todofiles/todos.txt', 'w') as file:
             file.writelines(todos)
