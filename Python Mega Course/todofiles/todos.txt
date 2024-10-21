@@ -2,3 +2,5 @@ Scott
 mattie
 tracy
 adding new functions
+Install Visual Code
+install pycharm

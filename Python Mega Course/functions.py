@@ -1,4 +1,6 @@
-def get_todos(filepath="todofiles/todos.txt"):
+FILEPATH = "todofiles/todos.txt"
+
+def get_todos(filepath=FILEPATH):
     """ Read a text file and return the list of
     to-do itesms.
     """
@@ -7,7 +9,7 @@ def get_todos(filepath="todofiles/todos.txt"):
     return todos_local
 
 
-def write_todos(todos_arg, filepath_arg="todofiles/todos.txt" ):
+def write_todos(todos_arg, filepath_arg=FILEPATH):
     """ Write the to-do items list in the text file."""
     with open(filepath_arg, 'w') as file_local:
         file_local.writelines(todos_arg)
@@ -15,3 +17,4 @@ def write_todos(todos_arg, filepath_arg="todofiles/todos.txt" ):
 
 if __name__ == "__main__":
     print("Hello")
+    print(get_todos())
