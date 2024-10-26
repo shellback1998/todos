@@ -1,4 +1,4 @@
-FILEPATH = "todofiles/todos.txt"
+FILEPATH = "C:/Users/223141708/PycharmProjects/todos/Python Mega Course/app1/todofiles/todos.txt"
 
 def get_todos(filepath=FILEPATH):
     """ Read a text file and return the list of
@@ -14,7 +14,7 @@ def write_todos(todos_arg, filepath_arg=FILEPATH):
     with open(filepath_arg, 'w') as file_local:
         file_local.writelines(todos_arg)
 
-
-if __name__ == "__main__":
-    print("Hello")
-    print(get_todos())
+#
+# if __name__ == "__main__":
+#     print("Hello")
+#     print(get_todos())
